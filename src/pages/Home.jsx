@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
+import WeatherWidget from './WeatherWidget';
+
 import workIcon from '../assets/work.png';
 import healthcareIcon from '../assets/healthcare.png';
 import enssentialIcon from '../assets/enssential.png';
@@ -13,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="border-1 border-blue-400 min-h-screen bg-gray-50">
+    <div className="border border-blue-400 min-h-screen bg-gray-50">
       {/* Navbar */}
       <nav className="bg-white shadow">
         <div className="border border-gray-400 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -56,6 +59,7 @@ export default function Home() {
 
       <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
                style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>
+        <WeatherWidget />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-50"></div>
         <div className="relative z-10 text-center">
           <h2 className="text-4xl font-bold text-white-800 mb-4">Welcome to New Zealand!</h2>

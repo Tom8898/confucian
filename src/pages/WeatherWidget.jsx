@@ -22,11 +22,11 @@ export default function WeatherWidget() {
   }, []);
 
   if (error) {
-    return <div>Weather Forecast Error: {error}</div>;
+    return <div className="absolute top-4 right-4 px-4 py-2 rounded shadow-lg text-sm text-gray-800">Weather Forecast Error: {error}</div>;
   }
 
   if (!weather) {
-    return <div>Loading Weather Forecast...</div>;
+    return <div className="absolute top-4 right-4 px-4 py-2 rounded shadow-lg text-sm text-gray-800">Loading Weather Forecast...</div>;
   }
 
   return (

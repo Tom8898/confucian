@@ -30,32 +30,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/*  Section */}
-      {/* <section className="border border-gray-400 min-h-[400px] lg:h-[500px] bg-blue-100 text-center flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-bold text-blue-800 mb-4">Welcome to New Zealand!</h2>
-        <p className="text-lg text-blue-700 max-w-xl mx-auto">
-          Your one-stop guide to settling, living, and thriving in Aotearoa.
-        </p>
-        <div className="mt-8">
-          <Link to="/arrival" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-            Get Started
-          </Link>
-        </div>
-      </section> */}
-
-      {/* <section className="min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center animate-pulse"
-                style={{ backgroundImage: "url('/images/auckland-night.png')" }} >
-        <h2 className="text-4xl font-bold text-blue-800 mb-4">Welcome to New Zealand!</h2>
-        <p className="text-lg text-blue-700 max-w-xl mx-auto">
-          Your one-stop guide to settling, living, and thriving in Aotearoa.
-        </p>
-        <div className="mt-8">
-          <Link to="/arrival" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-            Get Started
-          </Link>
-        </div>  
-      </section> */}
-
 
       <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
                style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>

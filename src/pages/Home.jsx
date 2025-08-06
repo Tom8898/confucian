@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+// This is weather widget component
 import WeatherWidget from './WeatherWidget';
 
+// 引入图标
 import workIcon from '../assets/work.png';
 import healthcareIcon from '../assets/healthcare.png';
 import enssentialIcon from '../assets/enssential.png';
@@ -28,8 +30,7 @@ export default function Home() {
             <Link to="/faq" className="text-gray-700 hover:text-blue-600">FAQ</Link>
           </div>
         </div>
-      </nav>
-
+      </nav> 
 
       <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
                style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>

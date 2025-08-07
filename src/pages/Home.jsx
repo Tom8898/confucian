@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 // This is weather widget component
 import WeatherWidget from './WeatherWidget';
+// Importing the custom navbar
+import CustomNavbar from './CustomNavbar.jsx'; 
+import Navigation from './Navigation.jsx';
 
 // 引入图标
 import workIcon from '../assets/work.png';
@@ -18,9 +21,9 @@ export default function Home() {
   }, []);
 
   return (
+    
     <div className="border border-blue-400 min-h-screen bg-gray-50">
-      {/* Navbar */}
-      <nav className="bg-white shadow">
+      {/* <nav className="bg-white shadow">
         <div className="border border-gray-400 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-xl font-bold text-blue-600">NZ Newcomer Guide</h1>
           <div className="space-x-4">
@@ -30,7 +33,11 @@ export default function Home() {
             <Link to="/faq" className="text-gray-700 hover:text-blue-600">FAQ</Link>
           </div>
         </div>
-      </nav> 
+      </nav>  */}
+      <Navigation />
+      {/* <Navigation /> */}
+
+
 
       <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
                style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>

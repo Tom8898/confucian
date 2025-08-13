@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 // This is weather widget component
 import WeatherWidget from './WeatherWidget';
-// Importing the custom navbar
-import CustomNavbar from './CustomNavbar.jsx'; 
+// Importing the navbar
 import Navigation from './Navigation.jsx';
 
 // 引入图标
@@ -35,8 +34,6 @@ export default function Home() {
         </div>
       </nav>  */}
       <Navigation />
-      {/* <Navigation /> */}
-
 
 
       <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"

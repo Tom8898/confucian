@@ -7,6 +7,8 @@ import WeatherWidget from './WeatherWidget';
 import Navigation from './Navigation.jsx';
 // import the content
 import HomeContent from './HomeContent.jsx';
+// import the carousel
+import Carousel from '../components/Carousel.jsx';
 
 export default function Home() {
   useEffect(() => {
@@ -14,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    
+
     <div className="border border-blue-400 min-h-screen bg-gray-50">
       {/* <nav className="bg-white shadow">
         <div className="border border-gray-400 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -29,9 +31,11 @@ export default function Home() {
       </nav>  */}
       <Navigation />
 
+      {/* Hero Section - Carousel */}
+      <Carousel />
 
-      <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
-               style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>
+      {/* <section className="relative min-h-[400px] lg:h-[500px] text-white flex flex-col justify-center items-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/auckland-night2.png')" }}>
         <WeatherWidget />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-50"></div>
         <div className="relative z-10 text-center">
@@ -45,7 +49,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
+
 
       {/* Feature Sections */}
       <section className="py-16 bg-white">

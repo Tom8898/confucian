@@ -22,20 +22,28 @@ export default function WeatherWidget() {
   }, []);
 
   if (error) {
-    return <div className="absolute top-4 right-4 px-4 py-2 rounded shadow-lg text-sm text-gray-800">Weather Forecast Error: {error}</div>;
+    return (
+      <div className="absolute top-4 right-4 px-4 py-3 rounded-lg shadow-lg text-sm text-white bg-black/30 backdrop-blur-sm border border-white/20">
+        Weather Forecast Error: {error}
+      </div>
+    );
   }
 
   if (!weather) {
-    return <div className="absolute top-4 right-4 px-4 py-2 rounded shadow-lg text-sm text-gray-800">Loading Weather Forecast...</div>;
+    return (
+      <div className="absolute top-4 right-4 px-4 py-3 rounded-lg shadow-lg text-sm text-white bg-black/30 backdrop-blur-sm border border-white/20">
+        Loading Weather Forecast...
+      </div>
+    );
   }
 
   return (
-    <div className="absolute top-4 right-4 px-4 py-2 rounded shadow-lg text-sm text-gray-800">
-      <h2 className="font-serif text-sm font-light mb-2">Current Weather in {weather.name}</h2>
-      <p className="font-serif">Temperature: {weather.main.temp} °C</p>
-      <p className="font-serif">Condition: {weather.weather[0].description}</p>
-      <p className="font-serif">Humidity: {weather.main.humidity}%</p>
-      <p className="font-serif">Wind Speed: {weather.wind.speed} m/s</p>
+    <div className="absolute top-4 right-4 px-4 py-3 rounded-lg shadow-lg text-sm text-white bg-black/30 backdrop-blur-sm border border-white/20">
+      <h2 className="font-serif text-sm font-semibold mb-2">Current Weather in {weather.name}</h2>
+      <p className="font-serif text-xs mb-1">Temperature: {weather.main.temp} °C</p>
+      <p className="font-serif text-xs mb-1">Condition: {weather.weather[0].description}</p>
+      <p className="font-serif text-xs mb-1">Humidity: {weather.main.humidity}%</p>
+      <p className="font-serif text-xs">Wind Speed: {weather.wind.speed} m/s</p>
     </div>
   );
 }

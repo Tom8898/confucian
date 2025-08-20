@@ -6,7 +6,7 @@ export default function Navigation() {
 
     return (
         <nav className="bg-white shadow">
-            <div className="border border-gray-400 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                 <h1 className="text-xl font-bold text-blue-600">NZ Newcomer Guide</h1>
                 <div className="flex space-x-4 items-center">
                     <Link to="/arrival" className="text-gray-700 hover:text-blue-600 transition-colors">Arrival</Link>

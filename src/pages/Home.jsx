@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
 
-    <div className="border border-blue-400 min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* <nav className="bg-white shadow">
         <div className="border border-gray-400 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-xl font-bold text-blue-600">NZ Newcomer Guide</h1>

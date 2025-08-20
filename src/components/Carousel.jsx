@@ -19,16 +19,16 @@ const Carousel = () => {
       image: '/images/auckland-night.png',
       title: 'Discover Aotearoa',
       subtitle: 'Explore the stunning landscapes and rich culture of New Zealand.',
-      buttonText: 'Learn More',
-      buttonLink: '/living'
+      buttonText: 'Get Started',
+      buttonLink: '/arrival'
     },
     {
       id: 3,
       image: '/images/auckland-night1.png',
       title: 'Start Your Journey',
       subtitle: 'Begin your adventure in one of the most beautiful countries in the world.',
-      buttonText: 'Explore Now',
-      buttonLink: '/education'
+      buttonText: 'Get Started',
+      buttonLink: '/arrival'
     }
   ];
 
@@ -84,7 +84,7 @@ const Carousel = () => {
         
         <Link
           to={slides[currentSlide].buttonLink}
-          className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 text-base font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
         >
           {slides[currentSlide].buttonText}
         </Link>

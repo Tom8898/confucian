@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // 引入图标
 import workIcon from '../assets/work.png';
@@ -11,12 +12,12 @@ import transportIcon from '../assets/transport.png';
 export default function HomeContent() {
     return (
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-4">
-          <div className="text-center">
+          <Link to="/arrival" className="text-center block hover:bg-gray-50 p-4 rounded-lg transition-colors duration-200">
             <h3 className="text-2xl font-semibold text-blue-700 mb-2">Arrival Essentials</h3>
             <img src={enssentialIcon} alt="Essential Icon" className="w-26 h-26 mx-auto mt-[-19px]" />
             <h2 className="text-sm font-bold text-gray-800 mb-4">Step-by-Step Help for Your First Days in New Zealand</h2>
             <p className="text-gray-600">Get practical help with all the essentials you need when you first arrive in New Zealand. Learn how to set up a local bank account, apply for an IRD number for tax, and get your public transport card. We also guide you through finding short-term accommodation, understanding mobile plans, and accessing translation or settlement support services. Everything you need to settle quickly and confidently is here.</p>
-          </div>
+          </Link>
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-blue-700 mb-2">Daily Living</h3>
             <img src={livingIcon} alt="Living Icon" className="w-26 h-26 mx-auto mt-[-19px]" />

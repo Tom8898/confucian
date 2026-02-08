@@ -37,8 +37,16 @@ export default function WeatherWidget() {
     );
   }
 
+  const dateStr = new Date().toLocaleDateString('en-NZ', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <div className="absolute top-4 right-4 px-4 py-3 rounded-lg shadow-lg text-sm text-white bg-black/30 backdrop-blur-sm border border-white/20">
+      <p className="font-serif text-xs mb-2 opacity-90">{dateStr}</p>
       <h2 className="font-serif text-sm font-semibold mb-2">Current Weather in {weather.name}</h2>
       <p className="font-serif text-xs mb-1">Temperature: {weather.main.temp} °C</p>
       <p className="font-serif text-xs mb-1">Condition: {weather.weather[0].description}</p>

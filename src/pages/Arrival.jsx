@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-export default function GetStarted() {
+export default function Arrival() {
   useEffect(() => {
     document.title = 'Get Started - NZ Newcomer Guide';
   }, []);

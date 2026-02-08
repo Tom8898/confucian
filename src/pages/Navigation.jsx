@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+
+const navLinkClass = ({ isActive }) =>
+    `px-3 py-2 rounded-md transition-colors ${isActive ? 'bg-sky-100 text-blue-700' : 'text-gray-700 hover:text-blue-600 hover:bg-sky-50'}`;
 
 export default function Navigation() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const location = useLocation();
+    const isEducationActive = location.pathname.startsWith('/education');
     const closeTimerRef = useRef(null);
     const menuRef = useRef(null);
 
@@ -51,9 +56,9 @@ export default function Navigation() {
         <nav className="bg-white shadow">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                 <h1 className="text-xl font-bold text-blue-600">NZ Newcomer Guide</h1>
-                <div className="flex space-x-4 items-center">
-                    <Link to="/arrival" className="text-gray-700 hover:text-blue-600 transition-colors">Arrival</Link>
-                    <Link to="/living" className="text-gray-700 hover:text-blue-600 transition-colors">Living</Link>
+                <div className="flex space-x-1 items-center">
+                    <NavLink to="/arrival" className={navLinkClass}>Arrival</NavLink>
+                    <NavLink to="/living" className={navLinkClass}>Living</NavLink>
                     {/* Education Dropdown */}
                     <div
                         className="relative"
@@ -61,7 +66,7 @@ export default function Navigation() {
                         ref={menuRef}
                     >
                         <button
-                            className="text-gray-700 hover:text-blue-600 transition-colors focus:outline-none flex items-center"
+                            className={`px-3 py-2 rounded-md transition-colors focus:outline-none flex items-center ${isEducationActive ? 'bg-sky-100 text-blue-700' : 'text-gray-700 hover:text-blue-600 hover:bg-sky-50'}`}
                             aria-haspopup="true"
                             aria-expanded={dropdownOpen}
                             type="button"
@@ -76,24 +81,24 @@ export default function Navigation() {
                                 className="absolute left-0 top-full w-40 bg-white border border-gray-200 rounded shadow-lg z-50"
                                 onMouseEnter={openDropdown}
                             >
-                                <Link
+                                <NavLink
                                     to="/education/school"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors"
+                                    className={({ isActive }) => `block px-4 py-2 transition-colors ${isActive ? 'bg-sky-100 text-blue-700' : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'}`}
                                     onClick={() => setDropdownOpen(false)}
                                 >
                                     School
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     to="/education/teacher"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors"
+                                    className={({ isActive }) => `block px-4 py-2 transition-colors ${isActive ? 'bg-sky-100 text-blue-700' : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'}`}
                                     onClick={() => setDropdownOpen(false)}
                                 >
                                     Teacher
-                                </Link>
+                                </NavLink>
                             </div>
                         )}
                     </div>
-                    <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition-colors">FAQ</Link>
+                    <NavLink to="/faq" className={navLinkClass}>FAQ</NavLink>
                 </div>
             </div>
         </nav>

@@ -12,7 +12,7 @@ const Carousel = () => {
       title: 'Welcome to New Zealand!',
       subtitle: 'Your one-stop guide to settling, living, and thriving in Aotearoa.',
       buttonText: 'Get Started',
-      buttonLink: '/get-started'
+      buttonLink: '/arrival'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Carousel = () => {
       title: 'Discover Aotearoa',
       subtitle: 'Explore the stunning landscapes and rich culture of New Zealand.',
       buttonText: 'Get Started',
-      buttonLink: '/get-started'
+      buttonLink: '/arrival'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Carousel = () => {
       title: 'Start Your Journey',
       subtitle: 'Begin your adventure in one of the most beautiful countries in the world.',
       buttonText: 'Get Started',
-      buttonLink: '/get-started'
+      buttonLink: '/arrival'
     }
   ];
 

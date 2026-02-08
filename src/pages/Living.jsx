@@ -7,7 +7,6 @@ const sections = [
   {
     id: 'housing',
     titleEn: 'Housing & Accommodation',
-    titleZh: '住房',
     description: 'Find rental and purchase options, understand tenancy agreements, bonds, and how to set up your home in New Zealand.',
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=260&fit=crop',
     imageAlt: 'Housing',
@@ -15,7 +14,6 @@ const sections = [
   {
     id: 'shopping',
     titleEn: 'Supermarket & Shopping',
-    titleZh: '日常购物',
     description: 'Where to shop for groceries, compare supermarkets, loyalty programmes, and everyday shopping tips.',
     image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=260&fit=crop',
     imageAlt: 'Supermarket',
@@ -23,7 +21,6 @@ const sections = [
   {
     id: 'utilities',
     titleEn: 'Utilities & Household Setup',
-    titleZh: '水电网',
     description: 'Power, water, gas, internet, and phone providers — how to connect and compare plans.',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=260&fit=crop',
     imageAlt: 'Utilities',
@@ -31,7 +28,6 @@ const sections = [
   {
     id: 'transport',
     titleEn: 'Transport & Driving',
-    titleZh: '日常出行',
     description: 'Public transport, driving licence, buying a car, and getting around your city.',
     image: transportIcon,
     imageAlt: 'Transport',
@@ -39,7 +35,6 @@ const sections = [
   {
     id: 'healthcare',
     titleEn: 'Healthcare & Pharmacy',
-    titleZh: '医疗',
     description: 'GPs, pharmacies, after-hours care, and how to access healthcare in NZ.',
     image: healthcareIcon,
     imageAlt: 'Healthcare',
@@ -47,7 +42,6 @@ const sections = [
   {
     id: 'banking',
     titleEn: 'Money & Banking',
-    titleZh: '日常财务',
     description: 'Banks, accounts, EFTPOS, and managing day-to-day finances in New Zealand.',
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=260&fit=crop',
     imageAlt: 'Banking',
@@ -55,7 +49,6 @@ const sections = [
   {
     id: 'rubbish',
     titleEn: 'Rubbish & Local Council',
-    titleZh: '社区生活',
     description: 'Rubbish collection, recycling, council services, and local community information.',
     image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=260&fit=crop',
     imageAlt: 'Rubbish and recycling',
@@ -63,7 +56,6 @@ const sections = [
   {
     id: 'culture',
     titleEn: 'Culture & Social Norms',
-    titleZh: '生活文化',
     description: 'Kiwi customs, social etiquette, and what to expect in everyday life and community.',
     image: livingIcon,
     imageAlt: 'Culture',
@@ -108,7 +100,6 @@ export default function Living() {
                 <h2 className="text-xl font-bold text-blue-700">
                   {section.titleEn}
                 </h2>
-                <p className="text-sm text-gray-500 mt-0.5">{section.titleZh}</p>
                 <p className="mt-3 text-gray-600 leading-relaxed">
                   {section.description}
                 </p>

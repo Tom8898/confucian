@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
 const navLinkClass = ({ isActive }) =>
@@ -55,7 +55,9 @@ export default function Navigation() {
     return (
         <nav className="bg-white shadow">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-                <h1 className="text-xl font-bold text-blue-600">NZ Newcomer Guide</h1>
+                <Link to="/" className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+                    NZ Newcomer Guide
+                </Link>
                 <div className="flex space-x-1 items-center">
                     <NavLink to="/arrival" className={navLinkClass}>Arrival</NavLink>
                     <NavLink to="/living" className={navLinkClass}>Living</NavLink>

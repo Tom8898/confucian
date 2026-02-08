@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
 import Arrival from './pages/Arrival.jsx';
+import Living from './pages/Living.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Test from './pages/test.jsx';
 
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/get-started" element={<Arrival />} />
           <Route path="/arrival" element={<Arrival />} />
           <Route path="/work" element={<Test />} />
-          <Route path="/living" element={<NotFound />} />
+          <Route path="/living" element={<Living />} />
           <Route path="/education" element={<Test />} />
           <Route path="/education/school" element={<Test />} />
           <Route path="/education/teacher" element={<Test />} />
